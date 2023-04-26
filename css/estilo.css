@@ -16,8 +16,28 @@ header{
     color:rgb(130, 124, 210);
     background-color:var(--header);
     text-decoration-line: none;
+    margin-right:5%;
 }
 
-.navega{
-    margin-left:15px;
+
+
+.container {
+  display: flex;
+}
+
+.aolado{
+    top:70%;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    background-color: #915f5f;
+    position: absolute;
+
+}
+
+
+
+#apresentacao{
+  flex: 1;
+  background-color: #ffbb3a;
 }
