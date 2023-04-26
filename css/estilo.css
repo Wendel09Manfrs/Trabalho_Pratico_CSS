@@ -1,3 +1,23 @@
+:root {
+    --header:#ce4b4b;
+    --text-gray:#4a4a4a;
+    --color-primary: #254263;
+    --white: #fff;
+    --text-light-gray: #aaa;  
+    --star-yellow: #ffbb3a;
+
+}
+
 header{
-    background-color: blue;
+    background-color: var(--header);
+}
+
+.navega{
+    color:rgb(130, 124, 210);
+    background-color:var(--header);
+    text-decoration-line: none;
+}
+
+.navega{
+    margin-left:15px;
 }
