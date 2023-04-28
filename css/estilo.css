@@ -1,5 +1,5 @@
 :root {
-    --header:#ce4b4b;
+    --header_footer:#915bde;
     --text-gray:#4a4a4a;
     --color-primary: #254263;
     --white: #fff;
@@ -10,7 +10,9 @@
 }
 
 header{
-    background-color: var(--header);
+    background-color: var(--header_footer);
+
+    
 }
 
 /* animação do banner em slide apenas com duas imagens, com uso somente de hmtl e css*/
@@ -41,6 +43,7 @@ header{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index:1
 }
 /*legenda transparente embaixo da imagem com mensagem curta que resume os produtos associados as imagens */
 .caption {
@@ -83,29 +86,31 @@ header{
 
 
 
-.navega{
-  color:rgb(130, 124, 210);
-  background-color:var(--header);
-  text-decoration-line: none;
-  margin-right:5%;
-}
+
+
+*{margin: 0; padding: 0;}
+
+
 
 
 
 .container {
-display: flex;
+display:flex;
 }
 
+html, body{
+  height: 100%;
+  width: 100%;
+}
 
 
 
 
 
 .aolado{
-    top:49%;
     right: 0;
-    width: 100%;
-    height: 500px;
+    width: 20%;
+  
     background-color: #915f5f;
     position:static;
     float: left;
@@ -115,7 +120,67 @@ display: flex;
 
 
 #apresentacao{ 
-  width: 300%;
+  width: 80%;
   background-color: #ffbb3a;
   height: 500px;
 }
+
+
+
+footer{
+  color:;
+  font-style: oblique;
+  font-family:'Times New Roman', Times, serif;
+   bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color:var(--header_footer);
+  text-align: center;
+  justify-content: center;
+  padding: 10px 0;
+  margin-top: auto;
+
+}    
+
+.menu{
+  list-style:none;
+  border:1px solid #c0c0c0;
+
+  }
+
+
+  .menu li{
+    position:relative;
+    float:left;
+    border-right:1px solid #c0c0c0;
+    width: 15%;
+    }
+  
+  .menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
+  
+  .menu li a:hover{
+      background:#333;
+      color:#fff; 
+      -moz-box-shadow:0 3px 10px 0 #CCC;
+     -webkit-box-shadow:0 3px 10px 0 #ccc;
+      text-shadow:0px 0px 5px #fff;
+      }
+  
+  .menu li  ul{
+     position:absolute;
+     top:25px;
+     left:0;
+     background-color:#f9ecec;
+     display:none;
+    }
+  
+    .menu li:hover ul, .menu li.over ul{display:block;
+    z-index:2}
+  
+    .menu li ul li{
+     border:1px solid #c0c0c0;
+      display:block;
+      width:150px;
+      }
+
+    
