@@ -145,6 +145,7 @@ footer{
 .menu{
   list-style:none;
   border:1px solid #c0c0c0;
+  width: 100%;
 
   }
 
@@ -153,7 +154,6 @@ footer{
     position:relative;
     float:left;
     border-right:1px solid #c0c0c0;
-    width: 15%;
     }
   
   .menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
@@ -172,14 +172,14 @@ footer{
      left:0;
      background-color:#f9ecec;
      display:none;
+     width: 100%;
     }
   
     .menu li:hover ul, .menu li.over ul{display:block;
     z-index:2}
   
     .menu li ul li{
-     border:1px solid #c0c0c0;
       display:block;
-      width:150px;
+      width:100%;
       }
 
