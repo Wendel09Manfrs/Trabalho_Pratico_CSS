@@ -147,8 +147,9 @@ footer{
 
 nav{
   display:flex;
-  justify-content: space-between;
-  width: 100%;
+  
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 
