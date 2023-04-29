@@ -45,6 +45,7 @@ height: 100%;
 object-fit: cover;
 z-index:1
 }
+
 /*legenda transparente embaixo da imagem com mensagem curta que resume os produtos associados as imagens */
 .caption {
 position: absolute;
@@ -83,16 +84,7 @@ animation: slideshow 8s infinite;
 animation-delay: calc(var(--i) * 5s);
 
 }
-
-
-
-
-
 *{margin: 0; padding: 0;}
-
-
-
-
 
 .container {
 display:flex;
@@ -102,10 +94,6 @@ html, body{
 height: 100%;
 width: 100%;
 }
-
-
-
-
 
 .aolado{
   right: 0;
@@ -143,12 +131,13 @@ margin-top: auto;
 
 .menu{
 list-style:none;
-
+font-size: 20px;
 display: flex;
 justify-content: space-around;
-background-color: #ffffff;
+background-color: #333;
 padding: 5px;
 border: solid 2px black;
+align-items: center;
 }
 
 
@@ -158,9 +147,9 @@ float:left;
 /* border-right:1px solid #c0c0c0; */
 background-color: #333;
 margin-inline: 3px;
-border:1px solid #c0c0c0;
-width: 15%;
+white-space: nowrap;
 text-align: center;
+
 }
 
 .menu li a{
@@ -170,15 +159,35 @@ padding:5px 10px;
 display:block;
 }
 
-.menu li a:hover{
-  -moz-box-shadow:0 3px 10px 0 #CCC;
- -webkit-box-shadow:0 3px 10px 0 #ccc;
-  text-shadow:0px 0px 5px #fff;
-  }
+
+
+
+
+/* estilização da barra de navegação*/
+a {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #670594;
+  transition: width 0.1s ease-in-out;
+}
+
+a:hover::before {
+  width: 100%;
+}
 
 .menu li ul{
  position:absolute;
- top:25px;
+ top:35px;
  left:0;
  display:none;
  height: 100%;
@@ -188,28 +197,64 @@ display:block;
 z-index:2}
 
 .menu li ul li{
- border:1px solid #c0c0c0;
+ border-bottom:1px solid #c0c0c0;
   display:block;
   width: 100%;
   margin: 0;
 }
 
+nav{
+  background-color: #4f29b7;
+}
+
 #espaco-pesquisa{
-display: flex;
-flex-direction: row;
-justify-content: center; 
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  }
+  
+  #espaco-pesquisa input{
+  outline: none;
+  width: 90%;
+  align-self: center;
+  }
+  
 
-#espaco-pesquisa input{
-outline: none;
-width: 90%;
-align-self: center;
-}
+  .search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 14px;
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 2px;
+  }
+  
+  input[type="text"] {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 30px;
+    padding: 5px;
+  }
+  
+  button[type="submit"] {
+    
+    border: none;
+    color: white;
+    padding:5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .fa-search {
+    font-size: 16px;
+  }
+  
 
-#pesquisa {
-display: flex;
-align-items: center;
-border: 1px solid #ccc;
-padding: 5px;
-border-radius: 5px;
-}
