@@ -1,5 +1,5 @@
 :root {
-  --header_footer:#915bde;
+  --header_footer:#956865;
   --text-gray:#4a4a4a;
   --color-primary: #254263;
   --white: #fff;
@@ -15,11 +15,15 @@ header{
   
 }
 
+
+
+
+
 /* animação do banner em slide apenas com duas imagens, com uso somente de hmtl e css*/
 
 #slideshow {
 position: relative;
-height: 400px;
+height:600px;
 width: 100%;
 overflow: hidden;
 }
@@ -149,7 +153,7 @@ background-color: #333;
 margin-inline: 3px;
 white-space: nowrap;
 text-align: center;
-
+width: 100%;/*aqui se muda o tamanho para cell*/
 }
 
 .menu li a{
@@ -190,7 +194,7 @@ a:hover::before {
  top:35px;
  left:0;
  display:none;
- height: 100%;
+ width: 100%;
 }
 
 .menu li:hover ul, .menu li.over ul{display:block;
