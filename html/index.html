@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalho_Pratico_CSS</title>
     <link rel="stylesheet" href="./../css/estilo.css" />
+    <link rel="stylesheet" href="../css/media-query-mobile.css">
 </head>
 
 <body>
@@ -35,6 +36,16 @@
 
         <nav>
             <ul class="menu">
+                <li id="li-menu-hamburguer">
+                    <a href="#" id="menu-hamburguer">
+                        <img 
+                        src="https://icons-for-free.com/download-icon-hamburger-1324760528048814325_512.png" 
+                        alt="menu hambúrguer"
+                        height="35vw"
+                        width="35vw"
+                        >
+                    </a>
+                </li>
                 <li><a href="#">Home</a>
                     <ul>
                         <li><a href="#">Visualizar Perfil</a></li>
@@ -157,11 +168,13 @@
 
                 <div class="informacoes-produto">
                     <!--coloquei o estilo in-line pra depois me basear quando for substituir a foto-->
-                    <img src="" alt="" style="
-                        width: 100px; height: 100px; 
-                        background-color: aliceblue;">
+                    <div id="foto-produto">
+                        <img src="" alt="" style="
+                            width: 100px; height: 100px; 
+                            background-color: aliceblue;">
+                    </div>
 
-                    <div>
+                    <div id="descricao-produto">
                         <h3 id="titulo-descricao-produto">Descrição</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem architecto dolor eligendi
                             sed praesentium tempore repellat tempora, harum commodi molestias recusandae dolore tenetur
@@ -265,7 +278,7 @@
 
                 <textarea name="" id="" rows="10" style="width: 100%; "></textarea>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" id="btn-enviar">Enviar</button>
             </fieldset>
         </form>
     </main>

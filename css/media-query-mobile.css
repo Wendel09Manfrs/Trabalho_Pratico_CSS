@@ -1,0 +1,105 @@
+#li-menu-hamburguer{
+    display: none;
+}
+
+@media screen and (min-width: 240px) and (max-width: 500px) {
+    #div-header img{
+        height: 30%;
+        width: 30%;
+    }
+    .menu{
+        font-size: .8em;
+    }
+    .menu > li{
+        display: none;
+        width: 100%;
+    }
+    .menu > li a{
+        margin-inline: 0;
+        padding: 0;
+    }
+    #espaco-pesquisa{
+        width: fit-content;
+    }    
+    .container{
+        border: solid 2px black;
+    }
+    #li-menu-hamburguer{
+        display: block;
+        background-color: white;
+        width: fit-content;
+        border-radius: 5px;
+    }
+    #slideshow{
+        height: 50vh;
+    }
+    #apresentacao{
+        height: min-content;
+    }
+    .container{
+        display: block;
+    }
+    .container #apresentacao{
+        width: 100%;
+    }
+    .informacoes-produto{
+        display: flex;
+        margin: 5px;
+    }
+    #foto-produto{
+        margin-inline: 5px;
+    }    
+    .lista-produtos-sugeridos{
+        display: flex;
+        justify-content: space-around;
+    }
+    .produto-sugerido{
+        margin-block: 5px;
+    }
+    .aolado{
+        display: block;
+        position:absolute;
+        width: 100%;
+    }
+    .lista-produtos-similares{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .produto-similar{
+        margin-block: 5px;
+    }
+    .sugestoes{
+        margin-top: 45px;
+        /* height: 100%; */
+        background-color: orangered;
+    }
+    .sugestoes h3{
+        margin: 5px;
+    }
+    .form-pergunta fieldset{
+        width: 100%;
+        float: inline-start;
+        background-color: lightblue;
+    }
+    .form-pergunta fieldset input{
+        width: 95%;
+        background-color: #8f7038;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    .form-pergunta fieldset textarea{
+        outline: none;
+    }
+    ::-webkit-input-placeholder{
+        color: white;
+        font-weight: bold;
+    }
+    
+    #btn-enviar{
+        background-color: #8f7038;
+        margin-block: 3px;
+        border: solid 1px black;
+        font-weight: bold;
+    }
+}
