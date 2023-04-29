@@ -2,7 +2,343 @@
     display: none;
 }
 
-@media screen and (min-width: 240px) and (max-width: 500px) {
+@media screen and (min-width: 240px) and (max-width: 700px) {
+    
+
+header{
+    background-color: var(--header_footer);
+  
+    
+  }
+
+  #listazinha{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 1vw;
+  }
+  
+  
+  #opcoes{
+    display: flex;
+    list-style-type: none;
+    font-size:2vw ;
+    
+  }
+  
+  #opcoes li{
+    padding: 10px;
+    color: #4f29b7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+
+  
+  /* animação do banner em slide apenas com duas imagens, com uso somente de hmtl e css*/
+  
+  #slideshow {
+  position: relative;
+  height:600px;
+  width: 100%;
+  overflow: hidden;
+  }
+  
+  .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  }
+  
+  
+  .slide:first-child {
+  opacity: 1;
+  }
+  
+  .slide img  {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index:1
+  }
+  
+  /*legenda transparente embaixo da imagem com mensagem curta que resume os produtos associados as imagens */
+  .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  }
+  
+  /* Auto-play slideshow */
+  @keyframes slideshow {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  53.33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+  }
+  
+  .slide:not(:first-child) {
+  animation: slideshow 8s infinite;
+  animation-delay: calc(var(--i) * 5s);
+  
+  }
+  *{margin: 0; padding: 0;}
+  
+  .container {
+  display:flex;
+  }
+  
+  html, body{
+  height: 100%;
+  width: 100%;
+  }
+  
+  .aolado{
+    right: 0;
+    width: 20%;
+  
+    background-color: #915f5f;
+    position:static;
+    float: left;
+  
+  }
+  
+  
+  
+  #apresentacao{ 
+  width: 80%;
+  background-color: #ffbb3a;
+  height: 500px;
+  }
+  
+  
+  
+  footer{
+  font-style: oblique;
+  font-family:'Times New Roman', Times, serif;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color:var(--header_footer);
+  text-align: center;
+  justify-content: center;
+  padding: 10px 0;
+  margin-top: auto;
+  
+  }  
+   
+
+  
+  .menu{
+  list-style:none;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 2px;
+  border: solid 2px black;
+  align-items: center;
+  }
+  
+  
+  .menu li{
+  position:relative;
+  float:left;
+  /* border-right:1px solid #c0c0c0; */
+  background-color: #333;
+  margin-inline: 3px;
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;/*aqui se muda o tamanho para cell*/
+  }
+  
+  .menu li a{
+  color: white;
+  text-decoration:none; 
+  padding:5px 8px; 
+  display:block;
+  }
+  
+  /* estilização da barra de navegação*/
+  a {
+    position: relative;
+    text-decoration: none;
+    color: #473b3b;
+  }
+  
+  a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #670594;
+    transition: width 0.1s ease-in-out;
+  }
+  
+  a:hover::before {
+    width: 100%;
+  }
+  
+  .menu li ul{
+   position:absolute;
+   top:35px;
+   left:0;
+   display:none;
+   width: 100%;
+  }
+  
+  .menu li:hover ul, .menu li.over ul{display:block;
+  z-index:2}
+  
+  .menu li ul li{
+   border-bottom:1px solid #c0c0c0;
+    display:block;
+    width: 100%;
+    margin: 0;
+    min-width: 25vw;
+  }
+  
+  nav{
+    background-color: #4f29b7;
+  }
+  
+  #espaco-pesquisa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    }
+    
+    #espaco-pesquisa input{
+    outline: none;
+    width: 90%;
+    align-self: center;
+    }
+    
+  
+    .search-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 14px;
+    }
+    
+    form {
+      display: flex;
+      align-items: center;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      padding: 2px;
+    }
+    
+    input[type="text"] {
+      border: none;
+      outline: none;
+      font-size: 16px;
+      width: 30px;
+      padding: 5px;
+    }
+    
+    button[type="submit"] {
+      
+      border: none;
+      color: white;
+      padding:5px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+    
+    .fa-search {
+      font-size: 16px;
+    }
+  
+  
+    #descricao{
+      color: #fff;
+      white-space: normal; 
+      overflow: hidden; 
+      text-overflow: ellipsis;
+      text-align:left;
+     width: 30vw;
+    }
+    #sabermais:hover{
+      color: #4f29b7;
+      text-decoration: underline;
+  
+    }
+
+
+
+
+
+
+
+
+
+
+    #menu-hamburguer{
+        background-color: rgb(85, 97, 101);
+        border-radius: 5px;
+        font-size: 7vw
+  
+      }
+  
+      #botao{
+          display:flex;
+      }
+
+
+      #logo{
+        padding: 5px;
+        display: flex;
+        color:#912424;
+        align-items:end;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 100%;
+        
+      }
+      #titulo{
+        max-width:100%;
+        height:10% ;
+        font-size: 4vw;
+        padding-bottom: 1vw;
+      
+      }
+      
+      #titulo>#titulo_menor{
+        max-width:100%;
+        height:10% ;
+        font-size: 2vw;
+      
+      }
+      
+      #logo>#poster{
+        max-width: 12%;
+        height: 10%; 
+      }
     #div-header img{
         height: 30%;
         width: 30%;
