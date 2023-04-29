@@ -139,7 +139,7 @@ font-size: 20px;
 display: flex;
 justify-content: space-around;
 background-color: #333;
-padding: 5px;
+padding: 2px;
 border: solid 2px black;
 align-items: center;
 }
@@ -159,7 +159,7 @@ width: 100%;/*aqui se muda o tamanho para cell*/
 .menu li a{
 color: white;
 text-decoration:none; 
-padding:5px 10px; 
+padding:5px 8px; 
 display:block;
 }
 
