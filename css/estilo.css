@@ -157,7 +157,7 @@ nav{
 .menu{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   list-style:none;
-  border:1px solid #584ad3;
+  
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -179,7 +179,6 @@ nav{
   .menu li{
     position:relative;
     float:left;
-    border-right:1px solid #c0c0c0;
     width: 20%;
     background-color:var(--header_footer);
     }
