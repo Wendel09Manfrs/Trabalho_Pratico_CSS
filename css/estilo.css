@@ -8,11 +8,20 @@
   --i: 1;
 
 }
+
+label{
+  color: #473b3b;
+}
 .menu-toggle {
   display: none; /* esconde o botão por padrão */
 }
 
 @media screen and (min-width:750px) {
+
+
+#linguagem{
+  width: 5vw;
+}
 
 header{
   background-color: var(--header_footer);
@@ -170,7 +179,7 @@ margin-top: auto;
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  padding-right: 5vw;
+  padding-right: 3vw;
 }
 
 

@@ -2,6 +2,12 @@
 
 @media screen and (min-width: 240px) and (max-width: 700px) {
     
+#linguagem{
+    width:15vw;
+    font-size: 2vw;
+    border-radius: 4px;
+    background-color: #66635d;
+  }
 
 header{
     background-color: var(--header_footer);
@@ -9,11 +15,19 @@ header{
     
   }
 
+
+  label{
+    color: #473b3b;
+  }
+
+
+
+
   #listazinha{
     display: flex;
     width: 100%;
     justify-content: flex-end;
-    padding-right: 1vw;
+    padding-left: 12vw;
   }
   
   
@@ -22,10 +36,11 @@ header{
     list-style-type: none;
     font-size:2vw ;
     
+    
   }
   
   #opcoes li{
-    padding: 10px;
+    padding: 5px;
     color: #4f29b7;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
