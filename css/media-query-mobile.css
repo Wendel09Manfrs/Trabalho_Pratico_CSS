@@ -1,5 +1,94 @@
+#fieldset-enviar-pergunta input::-webkit-input-placeholder{
+    opacity: 0.58;
+}
 
+#fieldset-enviar-pergunta input:focus, #fieldset-enviar-pergunta input:not(:focus){
+    color: white;
+}
 
+#fieldset-enviar-pergunta textarea{
+    align-self: center;
+}
+.produtos-similares h3{
+    text-align: center;
+} 
+.produto-similar{
+    background-color: lightslategrey;
+    padding: 5px;
+    margin-block: 5px;
+}
+.form-pergunta{
+    background-color: orangered;
+    border: none;
+    border-radius: 0;
+}
+.form-pergunta fieldset{
+    width: 100%;
+    margin: 5px;
+    float: inline-start;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+.form-pergunta fieldset legend{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: lightslategray;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+.lista-produtos-sugeridos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+.produto-sugerido p{
+    text-align: center;
+}
+#titulo p {
+    color: white;
+}
+
+.form-pergunta fieldset input{
+    width: 95%;
+    background-color: #8f7038;
+    margin: 5px;
+    border-radius: 5px;
+}
+.form-pergunta fieldset textarea{
+    outline: none;
+}
+::-webkit-input-placeholder{
+    color: white;
+    font-weight: bold;
+}
+
+#btn-enviar{
+    background-color: #8f7038;
+    margin-block: 3px;
+    border: solid 1px black;
+    font-weight: bold;
+}
+
+.lista-produtos-similares{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#ccc;
+}
+
+.produto-similar p {
+    text-align: center;
+}
+.sugestoes{
+    margin-top: 45px;
+    /* height: 100%; */
+    background-color: orangered;
+}
+.sugestoes h3{
+    margin: 5px;
+}
 @media screen and (min-width: 240px) and (max-width: 750px) {
     
 #linguagem{
@@ -44,8 +133,14 @@ header{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
   }
-
-  
+  #opcoes li a, #opcoes li label{
+    font-size: 1.5em;
+    color: white;
+  }
+  #linguagem{
+    background-color: white;
+    outline: none;
+  }
   /* animação do banner em slide apenas com duas imagens, com uso somente de hmtl e css*/
   
   #slideshow {
@@ -117,9 +212,9 @@ header{
   }
   *{margin: 0; padding: 0;}
   
-  .container {
+/*   .container {
   display:flex;
-  }
+  } */
   
   html, body{
   height: 100%;
@@ -133,7 +228,6 @@ header{
     background-color: #915f5f;
     position:static;
     float: left;
-  
   }
   
   
@@ -141,7 +235,7 @@ header{
   #apresentacao{ 
   width: 80%;
   background-color: #ffbb3a;
-  height: 500px;
+  height: max-content;
   }
   
   
@@ -161,16 +255,17 @@ header{
   }  
    
 #hamburguer{
-  width: 15px;
+  width: 30px;
+  height: 30px;
   margin-left: 5px;
   background-color: #928585;
-  border-radius: 4px;
-
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px white;
 }
-  
 
-  
-  
   .menu li{
   position:relative;
   float:left;
@@ -178,8 +273,8 @@ header{
   background-color: #100b0b;
   margin-inline: 3px;
   white-space: nowrap;
-  text-align: center;
-  width: 100%;/*aqui se muda o tamanho para cell*/
+  text-align: baseline;
+  /* width: 100%;/*aqui se muda o tamanho para cell*/ 
   }
   
   .menu li a{
@@ -187,28 +282,28 @@ header{
   text-decoration:none; 
   padding:5px 8px; 
   display:block;
-  }
-  
-  /* estilização da barra de navegação*/
-  a {
+}
+
+/* estilização da barra de navegação*/
+a {
     position: relative;
     text-decoration: none;
     color: #473b3b;
-  }
-  
+}
+
   a::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 0;
-    height: 2px;
-    background-color: #670594;
-    transition: width 0.1s ease-in-out;
-  }
-  
-  a:hover::before {
-    width: 100%;
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 0;
+      height: 2px;
+      background-color: #670594;
+      transition: width 0.1s ease-in-out;
+    }
+    
+    a:hover::before {
+        width: 100%;
   }
   
 
@@ -282,13 +377,12 @@ header{
   
     }
 
+.menu2{
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+}
 
-
-    
-
-
-
-   
 .menu2>li>ul{
     position:absolute;
     top:80px;
@@ -333,7 +427,7 @@ header{
         font-size: 2vw;
       
       }
-      
+
       #logo>#poster{
         max-width: 12%;
         height: 10%; 
@@ -352,24 +446,18 @@ header{
 
     .menu li:hover ul, .menu li.over ul{display:block;
       z-index:2}
-      
-     
-
-
-
+    #descricao-produto{
+        border: solid 1px black;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #c0c0c0;
+    }
     #espaco-pesquisa{
         width: 100%;
         background-color: #433926;
     }    
-    .container{
-        border: solid 2px black;
-    }
-  
     #slideshow{
         height: 50vh;
-    }
-    #apresentacao{
-        height: min-content;
     }
     .container{
         display: block;
@@ -384,63 +472,18 @@ header{
     #foto-produto{
         margin-inline: 5px;
     }    
-    .lista-produtos-sugeridos{
-        display: flex;
-        justify-content: space-around;
-    }
+
     .produto-sugerido{
-        margin-block: 5px;
+        margin: 5px;
     }
     .aolado{
         display: block;
-        position:absolute;
+        position:relative;
         width: 100%;
     }
-    .lista-produtos-similares{
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    .produto-similar{
-        margin-block: 5px;
-    }
-    .sugestoes{
-        margin-top: 45px;
-        /* height: 100%; */
-        background-color: orangered;
-    }
-    .sugestoes h3{
-        margin: 5px;
-    }
-    .form-pergunta fieldset{
-        width: 100%;
-        float: inline-start;
-        background-color: lightblue;
-    }
-    .form-pergunta fieldset input{
-        width: 95%;
-        background-color: #8f7038;
-        margin: 5px;
-        border-radius: 5px;
-    }
-    .form-pergunta fieldset textarea{
-        outline: none;
-    }
-    ::-webkit-input-placeholder{
-        color: white;
-        font-weight: bold;
-    }
-    
-    #btn-enviar{
-        background-color: #8f7038;
-        margin-block: 3px;
-        border: solid 1px black;
-        font-weight: bold;
-    }
 
-
-
-
-
-
+    .produto-sugerido{
+        background-color: lightslategray;
+        padding: 5px;
+    }
 }
