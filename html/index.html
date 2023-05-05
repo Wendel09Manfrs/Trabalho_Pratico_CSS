@@ -132,7 +132,7 @@
                     <li id="espaco-pesquisa">
                         <div class="search-box">
                             <form>
-                                <input type="text" placeholder="Pesquisar">
+                                <input type="text" placeholder="Pesquisar" id="pesquisa">
                             
                                 <button type="submit">
                                     <img width="15vw" src="/imagens/lupa.png" alt="Imagem de submissão">
@@ -397,11 +397,15 @@
         <form action="post" class="form-pergunta">
             <fieldset id="fieldset-enviar-pergunta">
                 <legend>Possui alguma dúvida?</legend>
-                <input type="text" style="display: block;" placeholder="nome">
-                <input type="text" style="display: block;" placeholder="email">
-                <input type="text" style="display: block;" placeholder="título da pergunta">
+                <div class="inputs-remetente-duvida">
+                    <input type="text" placeholder="nome">
+                    <input type="text" placeholder="email">
+                    <input type="text" placeholder="título da pergunta">
+                </div>
 
-                <textarea name="" id="" rows="10" style="width: 100%; " ></textarea>
+                <div class="textarea">
+                    <textarea name="" id="" rows="10" style="width: 100%; " ></textarea>
+                </div>
 
                 <button type="submit" id="btn-enviar">Enviar</button>
             </fieldset>

@@ -1,5 +1,15 @@
+.inputs-remetente-duvida{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 1px black;
+  background-color: aliceblue;
+}
+
 #fieldset-enviar-pergunta input::-webkit-input-placeholder{
-    opacity: 0.58;
+  opacity: 0.58;
 }
 
 #fieldset-enviar-pergunta input:focus, #fieldset-enviar-pergunta input:not(:focus){
@@ -8,6 +18,12 @@
 
 #fieldset-enviar-pergunta textarea{
     align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+#fieldset-enviar-pergunta .inputs-remetente-duvida input{
+  width: 100%;
 }
 .produtos-similares h3{
     text-align: center;
@@ -89,15 +105,24 @@
 .sugestoes h3{
     margin: 5px;
 }
+
+.textarea{
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.textarea textarea{
+  border-radius: 5px;
+}
 @media screen and (min-width: 240px) and (max-width: 750px) {
     
-#linguagem{
+  #linguagem{
     width:15vw;
     font-size: 2vw;
     border-radius: 4px;
     background-color: #66635d;
   }
-
 header{
     background-color: var(--header_footer);
   
@@ -185,7 +210,20 @@ header{
   text-align: center;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
   }
-  
+  .inputs-remetente-duvida{
+    padding: 0;
+    margin: 0;
+/*     background-color: transparent;
+    border: transparent; */
+    display: flex;
+    margin: 5px;
+    align-content: center;
+    flex-direction: column;
+    box-sizing:content-box;
+  }
+  .inputs-remetente-duvida input{
+    box-sizing: border-box;
+  }
   /* Auto-play slideshow */
   @keyframes slideshow {
   0% {
@@ -265,8 +303,8 @@ header{
   align-items: center;
   border: solid 2px white;
 }
-
   .menu li{
+  bottom: 15px;
   position:relative;
   float:left;
   /* border-right:1px solid #c0c0c0; */
@@ -316,22 +354,34 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center; 
+    width: 100%;
     }
     
     #espaco-pesquisa input{
     outline: none;
-    width: 90%;
+    width: max-content;
     align-self: center;
     }
     
+    #pesquisa{
+      width: max-content;
+    }
   
     .search-box {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
+      width: 100%;
       align-items: center;
       margin: 14px;
     }
     
+    .search-box form{
+      width: 100%;
+      
+    }
+    .search-box form #pesquisa{
+      width: 100%;
+    }
     form {
       display: flex;
       align-items: center;
@@ -344,7 +394,6 @@ a {
       border: none;
       outline: none;
       font-size: 16px;
-      width: 30px;
       padding: 5px;
     }
     
