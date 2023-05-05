@@ -37,6 +37,8 @@
     background-color: orangered;
     border: none;
     border-radius: 0;
+    position: relative;
+    z-index: 1;
 }
 .form-pergunta fieldset{
     width: 100%;
@@ -67,6 +69,13 @@
     color: white;
 }
 
+#apresentacao h2 {
+  background-color:lightgreen;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 0px 5px 5px 0px;
+  border: solid 1px black;
+}
 .form-pergunta fieldset input{
     width: 95%;
     background-color: #8f7038;
@@ -88,24 +97,56 @@
     font-weight: bold;
 }
 
+.produtos-similares{
+  height:100%;
+  background-color: #aaaaaa;
+  z-index: -1;
+}
+
+.produtos-similares h3{
+  font-size: 1.6em;
+  background-color: lightcoral;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 0px 5px 5px 0px;
+  border: solid 1px black;
+}
 .lista-produtos-similares{
     display: flex;
     justify-content: space-evenly;
     background-color:#ccc;
+    margin: 5px;
+    border: solid 1px black;
 }
 
 .produto-similar p {
     text-align: center;
 }
 .sugestoes{
-    margin-top: 45px;
-    /* height: 100%; */
     background-color: orangered;
-}
-.sugestoes h3{
-    margin: 5px;
+    position: relative;
+    z-index: 1;
 }
 
+.produto-sugerido{
+  background-color: lightblue;
+  padding: 5px;
+}
+#sugestoes-h3{
+
+}
+
+
+.aolado .lista-produtos-sugeridos .produto-sugerido{
+  margin-block-end: 10px;
+}
+
+#sugestoes-h3 h3{
+  display: inline;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: aliceblue;
+}
 .textarea{
   display: flex;
   justify-content: center;
@@ -116,7 +157,9 @@
   border-radius: 5px;
 }
 @media screen and (min-width: 240px) and (max-width: 750px) {
-    
+  .sugestoes{
+    z-index: -1;
+  }
   #linguagem{
     width:15vw;
     font-size: 2vw;

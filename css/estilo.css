@@ -20,8 +20,30 @@ label{
   display: none; /* esconde o botão por padrão */
 }
 
-@media screen and (min-width:750px) {
+.aolado > h2{
+  background-color: green;
+}
 
+.aolado > p{
+  background-color: rgb(52, 175, 52);
+}
+
+.aolado > h2, .aolado > p{
+  width: fit-content;
+  padding: 5px;
+  border: solid 1px black;
+  border-radius: 0px 5px 5px 0px;
+}
+
+@media screen and (min-width:750px) {
+#descricao-produto{
+  background-color: aliceblue;
+  padding: 5px;
+  border: solid 1px grey;
+}
+.aolado > p {
+  margin-block-end: 10px;
+}
 
 #linguagem{
   width: 5vw;
@@ -110,6 +132,9 @@ text-align: center;
 font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
+.informacoes-produto{
+  margin: 8px;
+}
 /* Auto-play slideshow */
 @keyframes slideshow {
 0% {
@@ -155,12 +180,11 @@ width: 100%;
 
 }
 
-
-
 #apresentacao{ 
-width: 80%;
-background-color: #ffbb3a;
-height: 500px;
+  width: 80%;
+  position: inherit;
+  background-color: #ffbb3a;
+
 }
 
 
@@ -340,6 +364,4 @@ nav{
     text-decoration: underline;
 
   }
-
-  
 }
