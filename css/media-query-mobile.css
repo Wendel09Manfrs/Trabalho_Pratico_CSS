@@ -142,7 +142,7 @@ height: 20vh;
     color: white;
 }
 
-#apresentacao h2 {
+#titulo-produto{
   background-color:rgb(233, 243, 233);
   width: fit-content;
   padding: 5px;
@@ -251,7 +251,6 @@ height: 20vh;
    min-width: 25vw;
   
  }
-
 
     #logo{
       padding: 5px;

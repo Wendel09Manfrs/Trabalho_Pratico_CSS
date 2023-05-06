@@ -14,13 +14,48 @@
 }
 
 
-
+.informacoes-produto{
+  display: flex;
+  margin: 5px;
+}
 
 #titulo3{
-  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-color: white;
+  border: solid 1px grey;
+  width: 100%;
+  margin: 5px;
+  border-radius: 5px;
+  text-indent: 5px;
+
 }
 
 
+#placa-mae{
+  margin: 5px;
+  align-self: center;
+  background-color: #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 1px grey;
+}
+#div-button{
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+}
+
+#div-button button{
+  padding: 5px;
+  border-color: transparent;
+  background-color: orangered;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
 
 
 #foto-produto{
@@ -377,10 +412,10 @@ width: 100%;
 text-align: center;
 font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
-
-.informacoes-produto{
-  margin: 5px;
+#titulo3{
+  align-self: baseline;
 }
+
 /* Auto-play slideshow */
 @keyframes slideshow {
 0% {
@@ -538,3 +573,4 @@ margin-top: auto;
   height: 80%;
   width: 80%;
 }
+
