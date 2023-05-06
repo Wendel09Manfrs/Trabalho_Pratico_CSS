@@ -73,6 +73,7 @@ height: 20vh;
     margin: 5px;
     border-radius: 5px;
     background-color: white;
+    border: solid 3px rgb(207, 192, 192);
   }
   .produto-similar img {
     object-fit: cover;
@@ -84,7 +85,6 @@ height: 20vh;
   .produto-similar:hover img {
     transform: scale(1.1);
   }
-
   
 
 
@@ -195,12 +195,7 @@ height: 20vh;
 .produto-similar p {
     text-align: center;
 }
-.sugestoes{
-    background-color: rgb(108, 87, 77);
-    position: relative;
-    z-index: 1;
-    justify-content: flex-start;
-  }
+
   .aolado .lista-produtos-sugeridos .produto-sugerido{
     margin-block-end: 20px;
   }
@@ -226,6 +221,13 @@ height: 20vh;
 
 .textarea textarea{
   border-radius: 5px;
+}
+
+.sugestoes{
+  background-color: #d0374c;
+  position: relative;
+  z-index: 1;
+  justify-content: flex-start;
 }
 @media screen and (min-width: 10px) and (max-width: 750px) {
 
@@ -501,16 +503,40 @@ height: 20vh;
   
   
   .produto-sugerido{
-    background-color: #cea464;
+    background-color:  #d0374c;;
     border-radius: 4px;
     color: #76f95c;
-    text-shadow: 1px 1px #000;
+    text-shadow: 1px 1px #000000;
     text-decoration-style: solid;
     text-align: center;
     margin: 8px;
-  
-    
   }
+
+
+  .sugestoes .lista-produtos-sugeridos .produto-sugerido{
+    background-color: #d0374c;
+    border-radius: 4px;
+    color: #e8e7ee;
+    text-shadow: 1px 1px #000;
+    text-decoration-style: solid;
+    text-align: center;
+    margin: 9px;
+    border: solid 1px rgb(159, 135, 135);
+  }
+
+  .sugestoes{
+    background-color: rgb(100, 93, 116);
+    position: relative;
+    z-index: 1;
+    justify-content: flex-start;
+  }
+
+
+
+
+
+
+  
 
  
   /* animação do banner em slide apenas com duas imagens, com uso somente de hmtl e css*/
