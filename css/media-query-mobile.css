@@ -8,6 +8,8 @@
   background-color: aliceblue;
 }
 
+*{margin: 0; padding: 0;}
+
 #fieldset-enviar-pergunta input::-webkit-input-placeholder{
   opacity: 0.58;
 }
@@ -27,12 +29,101 @@
 }
 .produtos-similares h3{
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ 
 } 
 .produto-similar{
-    background-color: lightslategrey;
+    
     padding: 5px;
     margin-block: 5px;
+    margin: auto;
+    text-align: center;
+    flex: 0 0 30%;
+    margin-right: 5px;
+    scroll-snap-align: start;
+    width: 100%;
+   
+  
+ 
 }
+
+
+.produto-similar>img{
+width: 15vh; 
+height: 15vh;
+}
+
+.produto-similar>p{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+
+
+
+
+  .lista-produtos-similares{
+    display: flex;
+
+    background-color:#ccc;
+    border: solid 1px black;
+    display: flex;
+    overflow: auto;
+   
+  }
+
+
+
+
+  .produto-similar img {
+    object-fit: cover;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .produto-similar:hover img {
+    transform: scale(1.1);
+  }
+
+  
+.span-produto-sugerido>img{
+  width: 10vh; 
+  height: 10vh;
+  }
+
+
+.produto-sugerido{
+  background-color: #d0374c;
+  border-radius: 4px;
+  color: #76f95c;
+  text-align: center;
+  margin: 8px;
+
+  
+}
+
+
+
+.produto-sugerido img {
+  object-fit: cover;
+  transition: transform 0.3s ease-out;
+}
+
+.produto-sugerido:hover img {
+  transform: scale(1.1);
+}
+
+
+#texto-justificado {
+  text-align: justify;
+}
+
+
+
+.span-produto-sugerido >p{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
 .form-pergunta{
     background-color: orangered;
     border: none;
@@ -54,27 +145,22 @@
     background-color: lightslategray;
     padding: 5px;
     border-radius: 5px;
-    border: solid 1px black;
+   
 }
-.lista-produtos-sugeridos{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    height: fit-content;
-}
-.produto-sugerido p{
-    text-align: center;
-}
+
+
+
 #titulo p {
     color: white;
 }
 
 #apresentacao h2 {
-  background-color:lightgreen;
+  background-color:rgb(233, 243, 233);
   width: fit-content;
   padding: 5px;
   border-radius: 0px 5px 5px 0px;
   border: solid 1px black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .form-pergunta fieldset input{
     width: 95%;
@@ -98,54 +184,43 @@
 }
 
 .produtos-similares{
-  height:100%;
-  background-color: #aaaaaa;
-  z-index: -1;
+
+  background-color: #a76e6e;
 }
 
 .produtos-similares h3{
   font-size: 1.6em;
-  background-color: lightcoral;
+  background-color: rgb(237, 228, 228);
   width: fit-content;
   padding: 5px;
   border-radius: 0px 5px 5px 0px;
   border: solid 1px black;
 }
-.lista-produtos-similares{
-    display: flex;
-    justify-content: space-evenly;
-    background-color:#ccc;
-    margin: 5px;
-    border: solid 1px black;
-}
+
 
 .produto-similar p {
     text-align: center;
 }
 .sugestoes{
-    background-color: orangered;
+    background-color: rgb(44, 33, 28);
     position: relative;
     z-index: 1;
-}
-
-.produto-sugerido{
-  background-color: lightblue;
-  padding: 5px;
-}
-#sugestoes-h3{
-
-}
+    justify-content: flex-start;
 
 
-.aolado .lista-produtos-sugeridos .produto-sugerido{
-  margin-block-end: 10px;
-}
+  }
+  .aolado .lista-produtos-sugeridos .produto-sugerido{
+    margin-block-end: 10px;
+  }
+
+
+
 
 #sugestoes-h3 h3{
   display: inline;
   padding: 5px;
   border-radius: 5px;
-  background-color: aliceblue;
+  background-color: rgb(39, 80, 114);
 }
 .textarea{
   display: flex;
@@ -156,10 +231,18 @@
 .textarea textarea{
   border-radius: 5px;
 }
-@media screen and (min-width: 240px) and (max-width: 750px) {
+@media screen and (min-width: 10px) and (max-width: 750px) {
+
+  .lista-produtos-sugeridos{
+    display: flex;
+
+    height: fit-content;
+    overflow:auto ;
+}
   .sugestoes{
     z-index: -1;
   }
+  *{margin: 0; padding: 0;}
  
 #lingua .linguagem {
   display: inline-block;
@@ -311,7 +394,6 @@ header{
   .aolado{
     right: 0;
     width: 20%;
-  
     background-color: #915f5f;
     position:static;
     float: left;
@@ -320,9 +402,10 @@ header{
   
   
   #apresentacao{ 
-  width: 80%;
-  background-color: #ffbb3a;
-  height: max-content;
+    width: 80%;
+    position: inherit;
+    background-color: var(--header_footer);
+  
   }
   
   
@@ -544,12 +627,16 @@ a {
 
     .menu li:hover ul, .menu li.over ul{display:block;
       z-index:2}
-    #descricao-produto{
-        border: solid 1px black;
+
+      #descricao-produto{
+        background-color: #c0a8a8;
         padding: 5px;
-        border-radius: 5px;
-        background-color: #c0c0c0;
-    }
+        border: solid 3px grey;
+        border-radius: 8px;
+      }
+    
+
+    
     #espaco-pesquisa{
         width: 100%;
         background-color: #433926;
@@ -566,6 +653,7 @@ a {
     .informacoes-produto{
         display: flex;
         margin: 5px;
+        flex-direction: column;
     }
     #foto-produto{
         margin-inline: 5px;
@@ -573,15 +661,13 @@ a {
 
     .produto-sugerido{
         margin: 5px;
+        
     }
     .aolado{
-        display: block;
+        display:block;
         position:relative;
         width: 100%;
     }
 
-    .produto-sugerido{
-        background-color: lightslategray;
-        padding: 5px;
-    }
+   
 }

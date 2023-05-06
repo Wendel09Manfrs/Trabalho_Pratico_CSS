@@ -21,11 +21,42 @@ label{
 }
 
 .aolado > h2{
-  background-color: green;
+  background-color: rgb(217, 229, 217);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  animation: mudar-cor 2s ease-in-out infinite;
+  width: 100%;
+  font-size: 2.2rem;
+}
+.aolado >p{
+  background-color: rgb(217, 229, 217);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  animation: mudar-cor 2s ease-in-out infinite;
+  width: 100%;
+  font-size: 1rem;
 }
 
+
+
+@keyframes mudar-cor {
+  0% { color: red; }
+  50% { color: blue; }
+  75% { color: rgb(41, 101, 41); }
+  100% { color: purple; }
+}
+
+
+
+
+
+
+
+
+
 .aolado > p{
-  background-color: rgb(52, 175, 52);
+  background-color: rgb(186, 199, 186);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .aolado > h2, .aolado > p{
@@ -37,12 +68,25 @@ label{
 
 
 
+
+
+
+
+
+
 @media screen and (min-width:750px) {
-#descricao-produto{
-  background-color: aliceblue;
-  padding: 5px;
-  border: solid 1px grey;
-}
+
+
+
+  .lista-produtos-sugeridos{
+    display: inline-block;
+    
+    flex-wrap: wrap;
+    height: fit-content;
+  
+  
+    
+  }
 .aolado > p {
   margin-block-end: 10px;
 }
@@ -145,7 +189,7 @@ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 .informacoes-produto{
-  margin: 8px;
+  margin: 5px;
 }
 /* Auto-play slideshow */
 @keyframes slideshow {
@@ -183,19 +227,18 @@ width: 100%;
 }
 
 .aolado{
-  right: 0;
+ right: 0;
   width: 20%;
 
   background-color: #915f5f;
   position:static;
   float: left;
-
 }
 
 #apresentacao{ 
   width: 80%;
   position: inherit;
-  background-color: #ffbb3a;
+  background-color: var(--header_footer);
 
 }
 
@@ -372,6 +415,19 @@ nav{
     text-align:left;
    width: 30vw;
   }
+  #descricao-produto{
+    background-color: #c0a8a8;
+    padding: 5px;
+    border: solid 3px grey;
+    border-radius: 8px;
+  }
+
+  
+
+
+
+
+  
   #sabermais:hover{
     color: #4f29b7;
     text-decoration: underline;
