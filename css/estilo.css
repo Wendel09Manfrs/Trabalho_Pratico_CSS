@@ -14,6 +14,33 @@
 }
 
 
+
+
+#titulo3{
+  width: 20%;
+}
+
+
+
+
+#foto-produto{
+ width: 50%;
+ background-color: rgb(110, 86, 86);
+ border-radius:10px;
+
+}
+
+
+
+
+
+
+
+#foto-produto img{
+   width: 100%;
+}
+
+
 .menu-toggle {
   display: none; /* esconde o botão por padrão */
 }
@@ -96,12 +123,18 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
   .lista-produtos-sugeridos .produto-sugerido{
-    border: solid 2px rgb(168, 53, 53);
+    border: solid 2px rgb(159, 125, 125);
   }
   .sugestoes .lista-produtos-sugeridos{
     justify-content:flex-start;
+    flex-wrap: wrap;
+    
   
 
+  }
+
+  .sugestoes{
+    flex-wrap: wrap;
   }
  
   
@@ -420,7 +453,7 @@ margin-top: auto;
   form {
     display: flex;
     align-items: center;
-    border: 2px solid #ccc;
+    border: 2px solid #d3b2b2;
     border-radius: 5px;
     padding: 2px;
   }
