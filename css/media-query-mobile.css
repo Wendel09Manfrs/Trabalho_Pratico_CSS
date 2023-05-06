@@ -49,8 +49,8 @@
 
 
 .produto-similar>img{
-width: 15vh; 
-height: 15vh;
+width: 20vh; 
+height: 20vh;
 }
 
 .produto-similar>p{
@@ -85,8 +85,8 @@ height: 15vh;
 
   
 .span-produto-sugerido>img{
-  width: 10vh; 
-  height: 10vh;
+  width: 17vh; 
+  height: 17vh;
   }
 
 
@@ -185,7 +185,7 @@ height: 15vh;
 
 .produtos-similares{
 
-  background-color: #a76e6e;
+  background-color: #afa8a8;
 }
 
 .produtos-similares h3{
@@ -202,15 +202,13 @@ height: 15vh;
     text-align: center;
 }
 .sugestoes{
-    background-color: rgb(44, 33, 28);
+    background-color: rgb(108, 87, 77);
     position: relative;
     z-index: 1;
     justify-content: flex-start;
-
-
   }
   .aolado .lista-produtos-sugeridos .produto-sugerido{
-    margin-block-end: 10px;
+    margin-block-end: 20px;
   }
 
 
@@ -220,8 +218,12 @@ height: 15vh;
   display: inline;
   padding: 5px;
   border-radius: 5px;
-  background-color: rgb(39, 80, 114);
+  background-color: rgb(215, 224, 232);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.6em;
+  
 }
+
 .textarea{
   display: flex;
   justify-content: center;
@@ -233,42 +235,118 @@ height: 15vh;
 }
 @media screen and (min-width: 10px) and (max-width: 750px) {
 
-  .lista-produtos-sugeridos{
-    display: flex;
+/*HEADER*/
 
-    height: fit-content;
-    overflow:auto ;
+.menu2{
+  height: 2.5em;
+  display: flex;
+  align-items: center;
 }
-  .sugestoes{
-    z-index: -1;
-  }
-  *{margin: 0; padding: 0;}
+
+.menu2>li>ul{
+  position:absolute;
+  top:80px;
+  left:0;
+  display:none;
+  width: 100%;
+}
  
-#lingua .linguagem {
-  display: inline-block;
-  width: 4vw;
-  height: 4vw;
-  background-color: #ccc;
-  margin-right: 4px;
-  font-weight: bold;
-  font-size: 1.5vw;
-  border-radius: 4px;
-  background-color: #c8f0e8;
+ .menu2 li:hover ul, .menu2 li.over ul{display:block;
+ z-index:2}
+ 
+ .menu2 li> ul> li{
+  border-bottom:1px solid #c0c0c0;
+   display:block;
+   width: 100%;
+   margin: 0;
+   min-width: 25vw;
   
+ }
 
-}
-header{
-    background-color: var(--header_footer);
-  
+
+    #logo{
+      padding: 5px;
+      display: flex;
+      color:#912424;
+      align-items:end;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      width: 100%;
+      
+    }
+    #titulo{
+      max-width:100%;
+      height:10% ;
+      font-size: 4vw;
+      padding-bottom: 1vw;
     
+    }
+    
+    #titulo>#titulo_menor{
+      max-width:100%;
+      height:10% ;
+      font-size: 2vw;
+    
+    }
+
+    #logo>#poster{
+      max-width: 12%;
+      height: 10%; 
+    }
+  #div-header img{
+      height: 30%;
+      width: 30%;
+  }
+ 
+
+
+  .menu > li> ul> li{
+     display:none;
   }
 
-  label{
-    color: #473b3b;
+
+  .menu li:hover ul, .menu li.over ul{display:block;
+    z-index:2}
+
+    #descricao-produto{
+      background-color: #c0a8a8;
+      padding: 5px;
+      border: solid 3px grey;
+      border-radius: 8px;
+    }
+  
+
+  
+  #espaco-pesquisa{
+      width: 100%;
+      background-color: #433926;
   }
 
 
-/*Lista das opções do lado da logotipo, junto com o seletor de linguagem*/
+
+
+  #lingua .linguagem {
+    display: inline-block;
+    width: 4vw;
+    height: 4vw;
+    background-color: #ccc;
+    margin-right: 4px;
+    font-weight: bold;
+    font-size: 1.5vw;
+    border-radius: 4px;
+    background-color: #c8f0e8;
+    
+  
+  }
+  header{
+      background-color: var(--header_footer);
+      
+    }
+
+
+    /*HEADER*/
+
+
+    /*Lista das opções do lado da logotipo, junto com o seletor de linguagem*/
 
   #listazinha{
     display: flex;
@@ -297,6 +375,143 @@ header{
     font-size: 1.5em;
     color: white;
   }
+
+
+
+  #hamburguer{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    background-color: #928585;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px white;
+  }
+    .menu li{
+    bottom: 15px;
+    position:relative;
+    float:left;
+    /* border-right:1px solid #c0c0c0; */
+    background-color: #100b0b;
+    margin-inline: 3px;
+    white-space: nowrap;
+    text-align: baseline;
+    /* width: 100%;/*aqui se muda o tamanho para cell*/ 
+    }
+    
+    .menu li a{
+    color: rgb(194, 176, 176);
+    text-decoration:none; 
+    padding:5px 8px; 
+    display:block;
+  }
+  
+  /* estilização da barra de navegação*/
+  a {
+      position: relative;
+      text-decoration: none;
+      color: #473b3b;
+  }
+  
+    a::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background-color: #670594;
+        transition: width 0.1s ease-in-out;
+      }
+      
+      a:hover::before {
+          width: 100%;
+    }
+    
+  
+    
+    nav{
+      background-color: #2b2621;
+    }
+    
+    #espaco-pesquisa{
+      display: flex;
+      flex-direction: row;
+      justify-content: center; 
+      width: 100%;
+      }
+      
+      #espaco-pesquisa input{
+      outline: none;
+      width: max-content;
+      align-self: center;
+      }
+      
+      #pesquisa{
+        width: max-content;
+      }
+    
+      .search-box {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin: 14px;
+      }
+      
+      .search-box form{
+        width: 100%;
+        
+      }
+      .search-box form #pesquisa{
+        width: 100%;
+      }
+
+      form {
+        display: flex;
+        align-items: center;
+        border: 2px solid #cb3737;
+        border-radius: 5px;
+        padding: 2px;
+      }
+      
+      input[type="text"] {
+        border: none;
+        outline: none;
+        font-size: 16px;
+        padding: 5px;
+      }
+
+      /*HEADER*/
+
+
+/*Area de sugestões*/
+
+
+  .sugestoes{
+    padding-top: 310px;
+  }
+
+  .lista-produtos-sugeridos{
+    display: flex;
+
+    height: fit-content;
+    overflow:auto ;
+}
+  .sugestoes{
+    z-index: -1;
+  }
+ 
+
+
+  label{
+    color: #473b3b;
+  }
+
+
+
  
   /* animação do banner em slide apenas com duas imagens, com uso somente de hmtl e css*/
   
@@ -424,110 +639,8 @@ header{
   
   }  
    
-#hamburguer{
-  width: 30px;
-  height: 30px;
-  margin-left: 5px;
-  background-color: #928585;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: solid 2px white;
-}
-  .menu li{
-  bottom: 15px;
-  position:relative;
-  float:left;
-  /* border-right:1px solid #c0c0c0; */
-  background-color: #100b0b;
-  margin-inline: 3px;
-  white-space: nowrap;
-  text-align: baseline;
-  /* width: 100%;/*aqui se muda o tamanho para cell*/ 
-  }
-  
-  .menu li a{
-  color: rgb(194, 176, 176);
-  text-decoration:none; 
-  padding:5px 8px; 
-  display:block;
-}
 
-/* estilização da barra de navegação*/
-a {
-    position: relative;
-    text-decoration: none;
-    color: #473b3b;
-}
 
-  a::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -2px;
-      width: 0;
-      height: 2px;
-      background-color: #670594;
-      transition: width 0.1s ease-in-out;
-    }
-    
-    a:hover::before {
-        width: 100%;
-  }
-  
-
-  
-  nav{
-    background-color: #2b2621;
-  }
-  
-  #espaco-pesquisa{
-    display: flex;
-    flex-direction: row;
-    justify-content: center; 
-    width: 100%;
-    }
-    
-    #espaco-pesquisa input{
-    outline: none;
-    width: max-content;
-    align-self: center;
-    }
-    
-    #pesquisa{
-      width: max-content;
-    }
-  
-    .search-box {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      align-items: center;
-      margin: 14px;
-    }
-    
-    .search-box form{
-      width: 100%;
-      
-    }
-    .search-box form #pesquisa{
-      width: 100%;
-    }
-    form {
-      display: flex;
-      align-items: center;
-      border: 2px solid #ccc;
-      border-radius: 5px;
-      padding: 2px;
-    }
-    
-    input[type="text"] {
-      border: none;
-      outline: none;
-      font-size: 16px;
-      padding: 5px;
-    }
     
     button[type="submit"] {
       
@@ -539,9 +652,6 @@ a {
       margin-left: 5px;
     }
     
-    .fa-search {
-      font-size: 16px;
-    }
   
   
     #descricao{
@@ -558,89 +668,7 @@ a {
   
     }
 
-.menu2{
-    height: 2.5em;
-    display: flex;
-    align-items: center;
-}
-
-.menu2>li>ul{
-    position:absolute;
-    top:80px;
-    left:0;
-    display:none;
-    width: 100%;
-  }
-   
-   .menu2 li:hover ul, .menu2 li.over ul{display:block;
-   z-index:2}
-   
-   .menu2 li> ul> li{
-    border-bottom:1px solid #c0c0c0;
-     display:block;
-     width: 100%;
-     margin: 0;
-     min-width: 25vw;
     
-   }
-
-
-      #logo{
-        padding: 5px;
-        display: flex;
-        color:#912424;
-        align-items:end;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        width: 100%;
-        
-      }
-      #titulo{
-        max-width:100%;
-        height:10% ;
-        font-size: 4vw;
-        padding-bottom: 1vw;
-      
-      }
-      
-      #titulo>#titulo_menor{
-        max-width:100%;
-        height:10% ;
-        font-size: 2vw;
-      
-      }
-
-      #logo>#poster{
-        max-width: 12%;
-        height: 10%; 
-      }
-    #div-header img{
-        height: 30%;
-        width: 30%;
-    }
-   
-
-
-    .menu > li> ul> li{
-       display:none;
-    }
-
-
-    .menu li:hover ul, .menu li.over ul{display:block;
-      z-index:2}
-
-      #descricao-produto{
-        background-color: #c0a8a8;
-        padding: 5px;
-        border: solid 3px grey;
-        border-radius: 8px;
-      }
-    
-
-    
-    #espaco-pesquisa{
-        width: 100%;
-        background-color: #433926;
-    }    
     #slideshow{
         height: 50vh;
     }
