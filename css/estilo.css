@@ -23,23 +23,32 @@
   display: flex;
   flex-direction: column;
   align-self: center;
-  background-color: white;
+  background-color: rgb(172, 144, 144);
   border: solid 1px grey;
   width: 100%;
   margin: 5px;
   border-radius: 5px;
   text-indent: 5px;
-
+  
 }
+
+#titulo3 p{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#titulo3 h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #2d2b31;
+}
+
 
 
 #placa-mae{
   margin: 5px;
   align-self: center;
-  background-color: #ccc;
+  background-color: #be9c9c;
   padding: 5px;
   border-radius: 5px;
-  border: solid 1px grey;
+  border: solid 1px rgb(101, 93, 93);
 }
 #div-button{
   display: flex;
@@ -558,11 +567,10 @@ margin-top: auto;
   #fieldset-enviar-pergunta{
     margin-inline: 50px;
     margin-block: 10px;
-  }
-
-  .lista-produtos-similares{
     
-  }
+  
+
+ 
 }
 
 .anuncio{
