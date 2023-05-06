@@ -160,12 +160,20 @@
   .sugestoes{
     z-index: -1;
   }
-  #linguagem{
-    width:15vw;
-    font-size: 2vw;
-    border-radius: 4px;
-    background-color: #66635d;
-  }
+ 
+#lingua .linguagem {
+  display: inline-block;
+  width: 4vw;
+  height: 4vw;
+  background-color: #ccc;
+  margin-right: 4px;
+  font-weight: bold;
+  font-size: 1.5vw;
+  border-radius: 4px;
+  background-color: #c8f0e8;
+  
+
+}
 header{
     background-color: var(--header_footer);
   
@@ -183,14 +191,15 @@ header{
     display: flex;
     width: 100%;
     justify-content: flex-end;
-    padding-left: 12vw;
-  }
+    padding-right: 0 
+   }
   
   
   #opcoes{
     display: flex;
     list-style-type: none;
-    font-size:60% ;
+    font-size: 1.5vw ;
+    align-items: end;
     
     
   }
@@ -205,10 +214,7 @@ header{
     font-size: 1.5em;
     color: white;
   }
-  #linguagem{
-    background-color: white;
-    outline: none;
-  }
+ 
   /* animação do banner em slide apenas com duas imagens, com uso somente de hmtl e css*/
   
   #slideshow {
