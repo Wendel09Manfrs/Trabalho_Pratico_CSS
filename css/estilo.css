@@ -144,9 +144,8 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 
   .aolado .lista-produtos-sugeridos{
-    display:block;
+    flex-direction: row;
     flex-wrap: wrap;
-    flex-direction: column;
   }
 
 
@@ -389,8 +388,9 @@ width: 100%;
  width: 20%;
    height: 1%;
   background-color: #915f5f;
-  overflow-y:auto; 
+  /* overflow-y:hidden;  */
 }
+
 
 #apresentacao{ 
   width: 80%;
@@ -467,8 +467,41 @@ margin-top: auto;
     text-decoration: underline;
 
   }
+  .span-produto-sugerido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+    width: 100%;
+    align-items: center;
+  }
+  .sugestoes .lista-produtos-sugeridos{
+    justify-content: space-around;
+  }
+  .sugestao{
+    height: 15rem;
+    width: 15rem;
+  }
 
+  .sugestao img {
+    width: 80%;
+    height: 80%;
+  }
+  #fieldset-enviar-pergunta{
+    margin-inline: 50px;
+    margin-block: 10px;
+  }
 
+  .lista-produtos-similares{
+    
+  }
+}
 
-  
+.anuncio{
+  display: flex;
+  flex-wrap: wrap;
+}
+.anuncio .span-produto-sugerido img{
+  height: 80%;
+  width: 80%;
 }

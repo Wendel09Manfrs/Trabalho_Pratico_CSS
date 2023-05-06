@@ -62,21 +62,24 @@ height: 20vh;
 
 
   .lista-produtos-similares{
-    display: flex;
-
     background-color:#ccc;
     border: solid 1px black;
-    display: flex;
-    overflow: auto;
-   
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-
-
-
+  .produto-similar{
+    border: solid 1px black;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: white;
+  }
   .produto-similar img {
     object-fit: cover;
     transition: transform 0.3s ease-out;
+    height: 10rem;
+    width: 10rem;
   }
   
   .produto-similar:hover img {
@@ -478,9 +481,6 @@ height: 20vh;
 
   .lista-produtos-sugeridos{
     display: flex;
-
-    height: fit-content;
-    overflow:auto ;
 }
 
  
@@ -497,9 +497,11 @@ height: 20vh;
   
   
   .produto-sugerido{
-    background-color: #d0374c;
+    background-color: #cea464;
     border-radius: 4px;
     color: #76f95c;
+    text-shadow: 1px 1px #000;
+    text-decoration-style: solid;
     text-align: center;
     margin: 8px;
   
@@ -605,7 +607,6 @@ height: 20vh;
     width: 20%;
     background-color: #915f5f;
     position:static;
-    overflow: hidden;
   }
   
   
@@ -686,9 +687,26 @@ height: 20vh;
         
     }
     .aolado{
-        display:block;
         position:relative;
         width: 100%;
     }
 
+    .aolado .lista-produtos-sugeridos{
+      display: flex;
+      justify-content: space-evenly;
+      background-color: rgb(160, 103, 82);
+      width: 100%;
+      flex-wrap: wrap;
+      /* flex-flow: row wrap; */
+    }
+    .anuncio{
+      width: 10rem;
+      height: 10rem;
+      align-content: center;
+      border: solid 1px black;
+    }
+    .aolado .lista-produtos-sugeridos .anuncio .span-produto-sugerido img {
+      height: 80%;
+      width: 80%;
+    }
 }
