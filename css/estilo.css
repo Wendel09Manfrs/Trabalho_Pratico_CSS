@@ -75,6 +75,20 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 
 @media screen and (min-width:750px) {
+  .aolado .lista-produtos-sugeridos .produto-sugerido{
+    width: 100%;
+  }
+  .sugestoes .lista-produtos-sugeridos{
+    justify-content: space-between;
+
+  }
+  .aolado .lista-produtos-sugeridos .produto-sugerido .span-produto-sugerido img{
+    width:  80%;
+    height: 80%;
+  }
+  body > main > section.sugestoes > div.lista-produtos-sugeridos .produto-sugerido{
+
+  }
 /*HEADER*/
   #logo{
     padding: 5px;
