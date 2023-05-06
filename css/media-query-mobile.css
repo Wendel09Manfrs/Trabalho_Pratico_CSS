@@ -84,21 +84,7 @@ height: 20vh;
   }
 
   
-.span-produto-sugerido>img{
-  width: 17vh; 
-  height: 17vh;
-  }
 
-
-.produto-sugerido{
-  background-color: #d0374c;
-  border-radius: 4px;
-  color: #76f95c;
-  text-align: center;
-  margin: 8px;
-
-  
-}
 
 
 
@@ -490,19 +476,13 @@ height: 20vh;
 /*Area de sugestões*/
 
 
-  .sugestoes{
-    padding-top: 310px;
-  }
-
   .lista-produtos-sugeridos{
     display: flex;
 
     height: fit-content;
     overflow:auto ;
 }
-  .sugestoes{
-    z-index: -1;
-  }
+
  
 
 
@@ -510,7 +490,21 @@ height: 20vh;
     color: #473b3b;
   }
 
-
+  .span-produto-sugerido>img{
+    width: 17vh; 
+    height: 17vh;
+    }
+  
+  
+  .produto-sugerido{
+    background-color: #d0374c;
+    border-radius: 4px;
+    color: #76f95c;
+    text-align: center;
+    margin: 8px;
+  
+    
+  }
 
  
   /* animação do banner em slide apenas com duas imagens, com uso somente de hmtl e css*/
@@ -611,7 +605,7 @@ height: 20vh;
     width: 20%;
     background-color: #915f5f;
     position:static;
-    float: left;
+    overflow: hidden;
   }
   
   
