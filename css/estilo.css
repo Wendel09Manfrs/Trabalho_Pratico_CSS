@@ -104,7 +104,6 @@
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-align: center;
   animation: mudar-cor 2s ease-in-out infinite;
-  width: 100%;
   font-size: 2.2rem;
   border: solid 1px blue
 }
@@ -113,7 +112,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-align: center;
   animation: mudar-cor 2s ease-in-out infinite;
-  width: 100%;
+
   font-size: 1rem;
 }
 
@@ -144,7 +143,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   padding: 5px;
   border: solid 1px rgb(136, 122, 122);
   border-radius: 0px 5px 5px 0px;
-  width: 100%;
+  width:96%;
 }
 
 
