@@ -24,7 +24,7 @@
 }
 
 #fieldset-enviar-pergunta .inputs-remetente-duvida input{
-  width: 98%;
+  width: 90%;
 }
 .produtos-similares h3{
     text-align: center;
@@ -102,6 +102,9 @@ height: 20vh;
 
 #texto-justificado {
   text-align: justify;
+  color: #25222d;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:medium
 }
 
 
@@ -118,7 +121,7 @@ height: 20vh;
     border-radius: 0;
     position: relative;
     z-index: 1;
-    width: 99%;
+    width: 100%;
 }
 .form-pergunta fieldset{
     width: 100%;
@@ -309,7 +312,6 @@ height: 20vh;
       border-radius: 8px;
     }
   
-
   
   #espaco-pesquisa{
       width: 100%;
@@ -665,12 +667,13 @@ height: 20vh;
   font-family:'Times New Roman', Times, serif;
   bottom: 0;
   width: 100%;
-  height: 30px;
+  height: 7vh;
   background-color:var(--header_footer);
   text-align: center;
   justify-content: center;
   padding: 10px 0;
   margin-top: auto;
+  align-items: center;
   
   }  
    

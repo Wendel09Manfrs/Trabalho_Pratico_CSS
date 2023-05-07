@@ -14,6 +14,127 @@
 }
 
 
+/*seção de comentários*/
+
+#botaozao {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  padding: 10px 10px 10px 10px;
+
+  border-radius: 5px;
+  font-size: 16px;
+  justify-content: center;
+  text-align: center;
+
+}
+
+#botaozao:hover{
+  background-color: #d9263b;
+    
+}
+
+.comentario .avaliacao .star >img{
+  width: 10%;
+  height: 10%;
+}
+
+#paiBOTAO{
+  display: block;
+  width: 100%;
+  height: 50px;
+  justify-content: end;
+  background-color: rgb(26, 224, 151);
+}
+
+
+/*seção de comentários*/
+.coments {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.comentario {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color:white
+
+}
+
+.comentario img {
+  width: 100px;
+  height: 100px;
+  
+  margin-bottom: 10px;
+}
+
+.comentario h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.comentario p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.avaliacao {
+ align-items: end;
+}
+
+
+
+
+  
+  
+  .footer-container {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 100%;
+    
+    
+  }
+  
+  .copia p {
+    font-size: 15px;
+    color: #341616;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  
+  }
+  
+  .footer-container .social-media a {
+    padding-right: 15px;
+  
+  }
+  
+  .footer-container .social-media  .icon #redes{
+   background-color: #ccc3d0;
+   border-radius: 12px;
+   flex-wrap: wrap;
+ 
+  }
+  .footer-container .social-media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 50%;
+   }
+ 
+
+ 
+
+   
+
+main{
+  overflow: hidden;
+}
+
+
 .informacoes-produto{
   display: flex;
   margin: 5px;
@@ -34,6 +155,7 @@
 
 #titulo3 p{
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: larger;
 }
 #titulo3 h2{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -181,7 +303,17 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 @media screen and (min-width:750px) {
 
-
+  footer{
+    font-style: oblique;
+    font-family:'Times New Roman', Times, serif;
+    background-color:#594f75;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    
+    } 
+    
 
   .span-produto-sugerido>img{
     width: 12vh; 
@@ -519,19 +651,12 @@ width: 100%;
 
 
 
-footer{
-font-style: oblique;
-font-family:'Times New Roman', Times, serif;
-bottom: 0;
-width: 100%;
-height: 30px;
-background-color:var(--header_footer);
-text-align: center;
-justify-content: center;
-padding: 10px 0;
-margin-top: auto;
 
-}  
+
+
+
+
+
 
 
   
@@ -571,10 +696,11 @@ margin-top: auto;
    width: 30vw;
   }
   #descricao-produto{
-    background-color: #c0a8a8;
+    background-color: #c39d9d;
     padding: 5px;
     border: solid 3px grey;
     border-radius: 8px;
+
   }
 
 
@@ -623,3 +749,4 @@ margin-top: auto;
   width: 80%;
 }
 
+}
