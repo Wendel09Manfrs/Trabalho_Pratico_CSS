@@ -1,0 +1,553 @@
+*{
+  font-family: sans-serif;
+}
+
+:root {
+  --header_footer:#956865;
+  --text-gray:#4a4a4a;
+  --color-primary: #254263;
+  --white: #fff;
+  --text-light-gray: #aaa;  
+  --star-yellow: #ffbb3a;
+  --i: 1;
+
+}
+
+
+/*seção de comentários*/
+
+#botaozao2 {
+  background-color: rgb(221, 19, 19);
+  color: white;
+  padding: 10px 10px 10px 10px;
+
+  border-radius: 5px;
+  font-size: 16px;
+  justify-content: center;
+  text-align: center;
+
+}
+
+#botaozao:hover{
+  background-color: #d9263b;
+    
+}
+
+#opcoes li a:not(#lingua){
+  color: white;
+}
+
+.comentario .avaliacao .star >img{
+  width: 10%;
+  height: 10%;
+}
+
+#paiBOTAO{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: end;
+  background-color: white;
+}
+
+#paiBOTAO #botaozao2{
+  margin: 10px;
+  cursor: pointer;
+}
+/*seção de comentários*/
+.coments {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.comentario {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color:white
+
+}
+
+.comentario img {
+  width: 100px;
+  height: 100px;
+  
+  margin-bottom: 10px;
+}
+
+.comentario h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.comentario p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.avaliacao {
+ align-items: end;
+}
+
+  .footer-container {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 100%;
+    
+    
+  }
+  
+  .copia p {
+    font-size: 15px;
+    color: #341616;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  
+  }
+  
+  .footer-container .social-media a {
+    padding-right: 15px;
+  
+  }
+  
+  .footer-container .social-media  .icon #redes{
+   background-color: #ccc3d0;
+   border-radius: 12px;
+   flex-wrap: wrap;
+ 
+  }
+  .footer-container .social-media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 50%;
+   }
+ 
+
+ 
+
+   
+
+main{
+  overflow: hidden;
+}
+
+
+.informacoes-produto{
+  display: flex;
+  margin: 5px;
+}
+
+#titulo3{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-color: rgb(172, 144, 144);
+  border: solid 1px grey;
+  width: 100%;
+  margin-inline: 5px;
+  border-radius: 10px;
+  text-indent: 5px;
+  
+}
+
+#titulo3 p{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: larger;
+}
+#titulo3 h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #2d2b31;
+}
+
+
+
+#placa-mae{
+  margin: 5px;
+  align-self: center;
+  background-color: #be9c9c;
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 1px rgb(101, 93, 93);
+}
+#div-button{
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+}
+
+#div-button button{
+  padding: 5px;
+  border-color: transparent;
+  background-color: orangered;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+
+#foto-produto {
+ width: fit-content;
+ background-color: rgb(131, 75, 75);
+ border-radius:10px;
+ border: solid 3px rgb(144, 117, 117);
+}
+
+
+ 
+ #foto-produto img{
+ 
+   transition: transform 0.3s ease-out;
+   width: fit-content;
+ }
+ 
+ #foto-produto:hover img {
+   transform: scale(1.1);
+ }
+
+
+
+
+
+#foto-produto img{
+   width: 100%;
+}
+
+
+.menu-toggle {
+  display: none; /* esconde o botão por padrão */
+}
+
+#anun{
+  margin-top: 5px;
+}
+
+.aolado #anun > h2{
+  background-color: rgb(40, 10, 93);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  animation: mudar-cor 2s ease-in-out infinite;
+  font-size: 2.2rem;
+  border: solid 1px blue
+}
+.aolado #anun >p{
+  background-color: rgb(139, 144, 177);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  animation: mudar-cor 2s ease-in-out infinite;
+
+  font-size: 1rem;
+}
+
+/*Reviw do produto*/
+
+.review{
+  border-radius: 10px;
+  border:7px outset #b42e30;
+  aspect-ratio: 16 / 9;
+  height: 90%;
+  width: 90%;
+}
+
+#reviewzao{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#reviewzao #reviewtitulo{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #c9b9b7;
+  animation: none;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #1e1c1f;
+  width: 100%;
+  text-align: center;
+  font-size: larger;
+  border: solid 2px rgb(147, 129, 129);
+  padding-block: 5px;
+  margin-bottom: 5px;
+}
+
+@keyframes mudar-cor {
+  0% { color: red; }
+  50% { color: blue; }
+  75% { color: rgb(41, 101, 41); }
+  100% { color: purple; }
+}
+
+.aolado > p{
+  
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.aolado > h2, .aolado > p{
+  width: fit-content;
+  padding: 5px;
+  border: solid 1px rgb(136, 122, 122);
+  border-radius: 0px 5px 5px 0px;
+  width:96%;
+}
+
+#pesquisa{
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.aolado{
+  background-color: lightsalmon;
+}
+
+.copia p {
+  text-indent: 5px;
+}
+
+.inputs-remetente-duvida{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+ 
+  border-radius: 5px;
+  border: solid 2px rgb(141, 143, 151);
+}
+
+*{margin: 0; padding: 0;}
+
+#fieldset-enviar-pergunta input::-webkit-input-placeholder{
+  opacity: 0.58;
+}
+
+#fieldset-enviar-pergunta input:focus, #fieldset-enviar-pergunta input:not(:focus){
+    color: white;
+}
+
+#fieldset-enviar-pergunta textarea{
+    align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: white;
+}
+
+#fieldset-enviar-pergunta .inputs-remetente-duvida input{
+  width: 98%;
+  align-self: center;
+}
+.produtos-similares h3{
+    text-align: center;
+    align-self: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ 
+} 
+.produto-similar{
+    
+    padding: 5px;
+    margin-block: 5px;
+    margin: auto;
+    text-align: center;
+    flex: 0 0 30%;
+    margin-right: 5px;
+    scroll-snap-align: start;
+    width: 100%;
+   
+  
+ 
+}
+
+
+.produto-similar>img{
+width: 20vh; 
+height: 20vh;
+}
+
+.produto-similar>p{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+
+
+
+
+  .lista-produtos-similares{
+    background-color:#ccc;
+    border: solid 2px rgb(211, 177, 177);
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .produto-similar{
+    border: solid 1px rgb(214, 192, 192);
+    margin: 5px;
+    border-radius: 5px;
+    background-color: white;
+    border: solid 3px rgb(207, 192, 192);
+  }
+  .produto-similar img {
+    object-fit: cover;
+    transition: transform 0.3s ease-out;
+    height: 10rem;
+    width: 10rem;
+  }
+  
+  .produto-similar:hover img {
+    transform: scale(1.1);
+  }
+  
+
+
+
+
+.produto-sugerido img {
+  object-fit: cover;
+  transition: transform 0.3s ease-out;
+}
+
+.produto-sugerido:hover img {
+  transform: scale(1.1);
+}
+
+
+#texto-justificado {
+  text-align: justify;
+  color: #25222d;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:medium
+}
+
+
+
+.span-produto-sugerido >p{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+.form-pergunta{
+    background-color: rgb(143, 135, 139);
+    border: none;
+    border-radius: 0;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+.form-pergunta fieldset{
+    width: 100%;
+    margin: 5px;
+    float: inline-start;
+    background-color: rgb(77, 100, 107);
+    border-radius: 5px;
+}
+.form-pergunta fieldset legend{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(106, 116, 126);
+    padding: 5px;
+    border-radius: 5px;
+   
+}
+
+
+
+#titulo p {
+    color: white;
+}
+
+#titulo-produto{
+  background-color:rgb(233, 243, 233);
+  width: fit-content;
+  padding: 5px;
+  border-radius: 0px 5px 5px 0px;
+  border: solid 1px black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.form-pergunta fieldset input{
+    width: 95%;
+    background-color: #97879f;
+    margin: 5px;
+    border-radius: 5px;
+}
+.form-pergunta fieldset textarea{
+    outline: none;
+    background-color: #907f95;
+}
+::-webkit-input-placeholder{
+    color: white;
+    font-weight: bold;
+}
+
+#fieldset-enviar-pergunta{
+  max-width: 100%;
+}
+
+#btn-enviar{
+    background-color: #4b4841;
+    margin-block: 3px;
+    border: solid 1px rgb(57, 43, 43);
+    font-weight: bold;
+}
+
+.produtos-similares{
+
+  background-color: #afa8a8;
+}
+
+.produtos-similares h3{
+  font-size: 1.6em;
+  background-color: rgb(237, 228, 228);
+  padding: 5px;
+  border-radius: 0px 5px 5px 0px;
+  border: solid 1px black;
+  width: fit-content;
+}
+
+
+.produto-similar p {
+    text-align: center;
+}
+
+  .aolado .lista-produtos-sugeridos .produto-sugerido{
+    margin-block-end: 20px;
+  }
+
+#sugestoes-h3 h3{
+  width: fit-content;
+  padding: 5px;
+  border-radius: 0px 5px 5px 0px;
+  border: solid 1px black;
+  background-color: rgb(215, 224, 232);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.6em;
+}
+
+.textarea{
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.textarea textarea{
+  border-radius: 5px;
+}
+
+.sugestoes{
+  background-color: #d0374c;
+  position: relative;
+  z-index: 1;
+  justify-content: flex-start;
+}
+
+#logo{
+  padding: 5px;
+  display: flex;
+  color:#912424;
+  align-items:end;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: inherit;
+  justify-content: space-between;
+}

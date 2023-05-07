@@ -1,0 +1,36 @@
+@media only screen and (min-width: 1366px){
+    #titulo{
+        font-size: 3em;
+    }
+    #opcoes{
+        font-size: 1.5em;
+    }
+    #texto-justificado, #reviewzao{
+        font-size: 1.5em;
+    }
+    .produto-similar, .span-produto-sugerido{
+        font-size: 1.4em;
+    }
+    .comentario h3{
+        font-size: 1.5em;
+    }
+    .comentario p, .comentario label{
+        font-size: 1.3em;
+    }
+    #titulo-descricao-produto, #titulo-produto, #reviewtitulo,
+    .produtos-similares h3, #sugestoes-h3 h3, 
+    #fieldset-enviar-pergunta legend,
+    #fieldset-enviar-pergunta input,
+    #fieldset-enviar-pergunta textarea,
+    #fieldset-enviar-pergunta button{
+        font-size: 2.5em;
+    }
+    #titulo3, .buy-button{
+        font-size: 1.5em;
+    }
+    .review {
+    }
+    .copia p{
+        font-size: 1.4em;
+    }
+}
