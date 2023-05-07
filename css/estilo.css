@@ -99,7 +99,7 @@
   display: none; /* esconde o botão por padrão */
 }
 
-.aolado > h2{
+.aolado #anun > h2{
   background-color: rgb(40, 10, 93);
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-align: center;
@@ -107,7 +107,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 2.2rem;
   border: solid 1px blue
 }
-.aolado >p{
+.aolado #anun >p{
   background-color: rgb(139, 144, 177);
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-align: center;
@@ -116,7 +116,35 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 1rem;
 }
 
+/*Reviw do produto*/
 
+.review{
+  border-radius: 10px;
+  border:7px outset #b42e30;
+  width: 80%;
+  height: 10%;
+ 
+}
+
+#reviewzao{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#reviewzao #reviewtitulo{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #c9b9b7;
+  animation: none;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #1e1c1f;
+  width: 80%;
+  font-size: larger;
+  border: solid 2px rgb(147, 129, 129);
+
+}
 
 @keyframes mudar-cor {
   0% { color: red; }
