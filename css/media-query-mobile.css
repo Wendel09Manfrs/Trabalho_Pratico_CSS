@@ -21,13 +21,16 @@
     align-self: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
+    color: white;
 }
 
 #fieldset-enviar-pergunta .inputs-remetente-duvida input{
-  width: 90%;
+  width: 98%;
+  align-self: center;
 }
 .produtos-similares h3{
     text-align: center;
+    align-self: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
  
 } 
@@ -65,9 +68,7 @@ height: 20vh;
     border: solid 2px rgb(211, 177, 177);
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
   }
-
   .produto-similar{
     border: solid 1px rgb(214, 192, 192);
     margin: 5px;
@@ -188,10 +189,10 @@ height: 20vh;
 .produtos-similares h3{
   font-size: 1.6em;
   background-color: rgb(237, 228, 228);
-  width: fit-content;
   padding: 5px;
   border-radius: 0px 5px 5px 0px;
   border: solid 1px black;
+  width: fit-content;
 }
 
 
@@ -203,17 +204,14 @@ height: 20vh;
     margin-block-end: 20px;
   }
 
-
-
-
 #sugestoes-h3 h3{
-  display: inline;
+  width: fit-content;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 0px 5px 5px 0px;
+  border: solid 1px black;
   background-color: rgb(215, 224, 232);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 1.6em;
-  
 }
 
 .textarea{
@@ -235,7 +233,10 @@ height: 20vh;
 @media screen and (min-width: 10px) and (max-width: 750px) {
 
 /*HEADER*/
-
+.lista-produtos-similares{
+  justify-content: center;
+  
+}
 .menu2{
   height: 2.5em;
   display: flex;
@@ -310,6 +311,7 @@ height: 20vh;
       padding: 5px;
       border: solid 3px grey;
       border-radius: 8px;
+      margin-bottom: 5px;
     }
   
   
@@ -318,21 +320,11 @@ height: 20vh;
       background-color: #433926;
   }
 
-
-
-
   #lingua .linguagem {
-    display: inline-block;
-    width: 4vw;
-    height: 4vw;
-    background-color: #ccc;
-    margin-right: 4px;
     font-weight: bold;
-    font-size: 1.5vw;
-    border-radius: 4px;
-    background-color: #c8f0e8;
-    
-  
+  }
+  #lingua{
+    margin-inline-end: 5px;
   }
   header{
       background-color: var(--header_footer);
@@ -358,15 +350,14 @@ height: 20vh;
     list-style-type: none;
     font-size: 1.5vw ;
     align-items: end;
-    
-    
+    align-items: center;
   }
   
   #opcoes li{
     padding: 5px;
     color: #4f29b7;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    font-size: 1.15em;
   }
   #opcoes li a, #opcoes li label{
     font-size: 1.5em;
@@ -474,7 +465,7 @@ height: 20vh;
         padding: 2px;
       }
       
-      input[type="text"] {
+      .inputs-remetente-duvida input{
         border: none;
         outline: none;
         font-size: 16px;
@@ -490,9 +481,11 @@ height: 20vh;
   .lista-produtos-sugeridos{
     display: flex;
 }
-
- 
-
+  .sugestao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   label{
     color: #473b3b;
@@ -599,8 +592,6 @@ height: 20vh;
   }
   .inputs-remetente-duvida input{
     box-sizing: border-box;
-
-   
   }
 
   /* Auto-play slideshow */
@@ -723,6 +714,7 @@ height: 20vh;
     }
     #foto-produto{
         margin-inline: 5px;
+        margin-bottom: 5px;
     }    
 
     .produto-sugerido{
@@ -756,7 +748,7 @@ height: 20vh;
       border: solid 1px black;
     }
     .aolado .lista-produtos-sugeridos .anuncio .span-produto-sugerido img {
-      height: 80%;
-      width: 80%;
+      height: 70%;
+      width: 70%;
     }
 }

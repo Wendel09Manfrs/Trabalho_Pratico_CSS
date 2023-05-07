@@ -33,6 +33,10 @@
     
 }
 
+#opcoes li a:not(#lingua){
+  color: white;
+}
+
 .comentario .avaliacao .star >img{
   width: 10%;
   height: 10%;
@@ -41,13 +45,15 @@
 #paiBOTAO{
   display: flex;
   width: 100%;
-  height: 50px;
+  height: 100%;
   justify-content: end;
   background-color: white;
-
 }
 
-
+#paiBOTAO #botaozao2{
+  margin: 10px;
+  cursor: pointer;
+}
 /*seção de comentários*/
 .coments {
   display: flex;
@@ -148,8 +154,8 @@ main{
   background-color: rgb(172, 144, 144);
   border: solid 1px grey;
   width: 100%;
-  margin: 5px;
-  border-radius: 5px;
+  margin-inline: 5px;
+  border-radius: 10px;
   text-indent: 5px;
   
 }
@@ -191,7 +197,7 @@ main{
 
 
 #foto-produto {
- width: 50%;
+ width: fit-content;
  background-color: rgb(131, 75, 75);
  border-radius:10px;
  border: solid 3px rgb(144, 117, 117);
@@ -202,7 +208,7 @@ main{
  #foto-produto img{
  
    transition: transform 0.3s ease-out;
-   width: 80%;
+   width: fit-content;
  }
  
  #foto-produto:hover img {
@@ -220,6 +226,10 @@ main{
 
 .menu-toggle {
   display: none; /* esconde o botão por padrão */
+}
+
+#anun{
+  margin-top: 5px;
 }
 
 .aolado #anun > h2{
@@ -244,9 +254,9 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 .review{
   border-radius: 10px;
   border:7px outset #b42e30;
-  width: 80%;
-  height: 10%;
- 
+  aspect-ratio: 16 / 9;
+  height: 90%;
+  width: 90%;
 }
 
 #reviewzao{
@@ -263,10 +273,12 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   animation: none;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #1e1c1f;
-  width: 80%;
+  width: 100%;
+  text-align: center;
   font-size: larger;
   border: solid 2px rgb(147, 129, 129);
-
+  padding-block: 5px;
+  margin-bottom: 5px;
 }
 
 @keyframes mudar-cor {
@@ -363,8 +375,8 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:#912424;
     align-items:end;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 100%;
-    
+    width: inherit;
+    justify-content: space-between;
   }
   #titulo{
     max-width:100%;
@@ -406,18 +418,22 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin-block-end: 10px;
 }
 
+#lingua{
+  /* display: flex; */
+}
 #lingua .linguagem {
-  display: inline-block;
-  width: 2vw;
+  width: fit-content;
   height: 2vw;
-  background-color: #ccc;
   margin-right: 3px;
   font-weight: bold;
   font-size: 0.8vw;
   border-radius: 4px;
-  background-color:#c8f0e8 ;
-  
-
+  background-color:white ;
+  cursor: pointer;
+  text-align: center;
+  align-self: center;
+  border: solid 2px black;
+  padding: 3px;
 }
 
 header{
@@ -669,7 +685,7 @@ width: 100%;
     padding: 2px;
   }
   
-  input[type="text"] {
+  .inputs-remetente-duvida input{
     border: none;
     outline: none;
     font-size: 16px;
@@ -701,7 +717,7 @@ width: 100%;
     padding: 5px;
     border: solid 3px grey;
     border-radius: 8px;
-
+    margin-block-end: 5px;
   }
 
 
@@ -726,6 +742,7 @@ width: 100%;
   .sugestao{
     height: 15rem;
     width: 15rem;
+    background-color: #ca606f;
   }
 
   .sugestao img {
@@ -745,9 +762,26 @@ width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
+
 .anuncio .span-produto-sugerido img{
   height: 80%;
   width: 80%;
 }
 
+}
+#pesquisa{
+  padding: 5px;
+  border-radius: 5px;
+}
+
+header{
+
+}
+
+.aolado{
+  background-color: lightsalmon;
+}
+
+.copia p {
+  text-indent: 5px;
 }
