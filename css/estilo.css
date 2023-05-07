@@ -367,17 +367,6 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     flex-wrap: wrap;
   }
  
-  
-/*HEADER*/
-  #logo{
-    padding: 5px;
-    display: flex;
-    color:#912424;
-    align-items:end;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: inherit;
-    justify-content: space-between;
-  }
   #titulo{
     max-width:100%;
     height:100% ;

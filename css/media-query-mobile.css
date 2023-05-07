@@ -752,3 +752,13 @@ height: 20vh;
       width: 70%;
     }
 }
+
+#logo{
+  padding: 5px;
+  display: flex;
+  color:#912424;
+  align-items:end;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: inherit;
+  justify-content: space-between;
+}
