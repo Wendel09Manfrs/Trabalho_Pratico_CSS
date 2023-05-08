@@ -510,11 +510,13 @@ height: 20vh;
 .produto-similar p {
     text-align: center;
 }
-
   .aolado .lista-produtos-sugeridos .produto-sugerido{
     margin-block-end: 20px;
   }
 
+  .anuncio{
+    width: 100%;
+  }
 #sugestoes-h3 h3{
   width: fit-content;
   padding: 5px;
