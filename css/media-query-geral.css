@@ -554,8 +554,11 @@ height: 20vh;
   justify-content: space-between;
 }
 
+#coments_botao{
+  background-color: white;
+  padding: 5px;
+}
 #ultimas-avaliacoes{
-  margin: 10px;
   background-color: rgb(237 228 228);
   border: solid 1px black;
   width: fit-content;
