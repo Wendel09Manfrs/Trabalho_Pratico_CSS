@@ -564,5 +564,7 @@ height: 20vh;
   width: fit-content;
   padding: 5px;
   border-radius: 5px;
-  font-size: 2em;
+  font-size: 1.5em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
 }
