@@ -16,7 +16,7 @@
 
 /*seção de comentários*/
 
-#botaozao2 {
+#btn-carrega-mais {
   background-color: rgb(221, 19, 19);
   color: white;
   padding: 10px 10px 10px 10px;
@@ -28,7 +28,7 @@
 
 }
 
-#botaozao:hover{
+#botao-hamburguer:hover{
   background-color: #d9263b;
     
 }
@@ -42,7 +42,7 @@
   height: 10%;
 }
 
-#paiBOTAO{
+#div-btn-carrega-mais{
   display: flex;
   width: 100%;
   height: 100%;
@@ -50,7 +50,7 @@
   background-color: white;
 }
 
-#paiBOTAO #botaozao2{
+#btn-carrega-mais{
   margin: 10px;
   cursor: pointer;
 }
@@ -254,7 +254,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   width: 90%;
 }
 
-#reviewzao{
+#review-produto{
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -262,7 +262,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   
 }
 
-#reviewzao #reviewtitulo{
+#review-titulo{
   font-family: Georgia, 'Times New Roman', Times, serif;
   background-color: #c9b9b7;
   animation: none;
