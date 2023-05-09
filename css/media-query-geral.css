@@ -553,3 +553,12 @@ height: 20vh;
   width: inherit;
   justify-content: space-between;
 }
+
+#ultimas-avaliacoes{
+  margin: 10px;
+  background-color: rgb(237 228 228);
+  border: solid 1px black;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+}
