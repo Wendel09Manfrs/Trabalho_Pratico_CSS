@@ -202,7 +202,7 @@
    width: 100%;
   }
   
-  .menu li:hover ul, .menu li.over ul{display:block;
+  .menu li:hover ul, .menu.li ul{display:block;
   z-index:2}
   
   .menu li ul li{
